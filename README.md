@@ -268,7 +268,7 @@
 
 ### Import template and value mapping file
 
-1. Import template ([zbx_kafka_templates.xml](/kafka-server/zbx_templates_kafkaconsumers.xml), [zbx_templates_kafkaconsumers.xml](/kafka-consumer/zbx_templates_kafkaconsumers.xml))
+1. Import template ([zbx_kafka_templates.xml](/kafka-server/zbx_kafka_templates.xml), [zbx_templates_kafkaconsumers.xml](/kafka-consumer/zbx_templates_kafkaconsumers.xml))
 
    `Configuration` > `Templates` > `Import` > `Choose Files` > `Import`
 
