@@ -1,8 +1,8 @@
 # Confluent Kafka Monitoring with Zabbix
 
-@ Zabbix Server
+## Zabbix Server
 
-## Enable Zabbix JMX Gateway
+### Enable Zabbix JMX Gateway
 
 1. Install zabbix-java-gataway
 
@@ -34,7 +34,7 @@
    systemctl enable zabbix-java-gataway
    ```
 
-## Install scripts for discovery JMX at Zabbix Server
+### Install scripts for discovery JMX at Zabbix Server
 
 ``` bash
 # cd /tmp/
@@ -46,9 +46,9 @@
 # chmod +x /etc/zabbix/externalscripts/JMXDiscovery-0.0.1.jar
 ```
 
-@ Kafka Each Servers
+## Kafka Each Servers
 
-## Enable JMX Kafka Server
+### Enable JMX Kafka Server
 
 1. Create authentication files
 
@@ -118,7 +118,7 @@
    # firewall-cmd --info-service=jmx-zabbix
    ```
 
-## Install Burrow
+### Install Burrow
 
 1. Install Golang
 
@@ -245,7 +245,7 @@
    # curl --noproxy "*" -s http://127.0.0.1:8000/v3/kafka/local/consumer | jq
    ```
 
-## Configure Zabbix Agent
+### Configure Zabbix Agent
 
 1. Install `kafka_consumers.sh`
 
@@ -264,9 +264,9 @@
    # systemctl restart zabbix-agent
    ```
 
-@ Zabbix Web GUI
+## Zabbix Web GUI
 
-## Import template and value mapping file
+### Import template and value mapping file
 
 1. Import template ([zbx_kafka_templates.xml](/zabbix-kafka-monitoring/kafka-server/zbx_templates_kafkaconsumers.xml), [zbx_templates_kafkaconsumers.xml](/zabbix-kafka-monitoring/kafka-consumer/zbx_templates_kafkaconsumers.xml))
 
